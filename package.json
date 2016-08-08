@@ -1,0 +1,28 @@
+{
+  "name": "elm-webpack-loader-example",
+  "version": "0.0.1",
+  "license": "BSD-3-Clause",
+  "private": true,
+  "scripts": {
+    "build:css": "postcss -c postcss.json",
+    "build": "npm run build:css && webpack",
+    "watch": "webpack --watch",
+    "watch:css": "postcss -c postcss.json --watch",
+    "dev": "npm run watch:css & webpack-dev-server --port 3000"
+  },
+  "dependencies": {
+    "bulma": "^0.1.2",
+    "cssnano": "^3.7.3",
+    "file-loader": "^0.8.5",
+    "postcss": "^5.1.2",
+    "postcss-cli": "^2.5.2",
+    "postcss-import": "^8.1.2",
+    "postcss-nested": "^1.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.0",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.23.1"
+  }
+}

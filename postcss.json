@@ -1,0 +1,17 @@
+{
+    "use": [
+        "autoprefixer",
+        "postcss-import",
+        "postcss-nested",
+        "cssnano"
+    ],
+    "autoprefixer": {
+        "browsers": "> 5%"
+    },
+    "postcss-import": {
+        "path": ["src/css", "node_modules"]
+    },
+    "local-plugins": true,
+    "input": "src/css/index.css",
+    "output": "src/app.css"
+}
